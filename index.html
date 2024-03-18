@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Deekshita</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Activities</a></li>
+                <li><a href="#projects">Profile Summary </a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Deekshita</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Activities</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Profile Summary  </a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.jpg" alt="profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Deekshita</h1>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-deekshita.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/deekshita-dakshnamoorthy-87629526a'">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/deekshitaDakshnamoorthy'">
+                <img src="./assets/leetcode-pic.png" alt="My Leetcode profile" class="icon" onclick="location.href='https://leetcode.com/Deekshita_D/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic (2).jpg" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Academic History</h3>
+                        <p>BACHELOR OF ENGINEERING(ELECTRICAL
+                            AND ELECTRONIC ENGINEERING) <br />Karpagam College of Engineering,
+                            Coimbatore |2021-Present
+                            CGPA - 8.6(Up to IV semester)</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Education icon" class="icon">
+                        <p>HSC(State Board)Bhagavan Higher Secondary School |2021
+                            Percentage-89.16%<br />SSLC(State Board)Bhagavan Higher Secondary School
+                            |2019 Percentage-88.8%</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Seeking for a challenging position in an
+                        progressive organization to utilise my skills and
+                        abilities while making significant contribution
+                        to the success of my company.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Collaborated with a team of four and
+                                    developed a "Electronic Eye System using LDR
+                                    | August-2022</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Collaborated with a team of four and
+                                    developed a "Laser Alarm Security System
+                                    Using GSM Module | December-2022</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>FULLSTACK JAVA (internship)-2023</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Java project using JDBC for Bus Reservation 
+                                    System.</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Code Jet- Learning Paltform website(MERN Stack)</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Profile Summary & Expertise
+        </h1>
+        <div>
+            <p1>Experienced in C, Java, DBMS, JavaScript, HTML/CSS | Proficient in Web Development | Passionate about Reading, Art, and Social Causes | Certified in Infosys, AICTE, Skillrack, NPTEL Introduction of IoT (Silver) | Skilled in Attention to Detail, Empathy, Collaboration | Proficient with Eclipse IDE, Dev C++, Arduino IDE, VS Code.</p1>
+
+        </div>
+        <div>
+            <p2><b>Summary:</b>
+                <div>Highly skilled in C, Java, DBMS, JavaScript, and HTML/CSS with a strong focus on web development. Adept at leveraging tools like Eclipse IDE, Dev C++, Arduino IDE, and VS Code to deliver robust solutions. Passionate about reading, art, and contributing to social causes.
+                </div>
+                <b>Certifications:</b>
+                <div>
+                Certified by Infosys, AICTE, and Skillrack.
+                Completed NPTEL Introduction of IoT course with a commendable achievement of 75% (Silver).
+                SIEP E-bike Challenge-2024 (Won First Prize in Best Hill climbing Test).
+              </div>
+               <b>Skills & Proficiencies:</b> 
+                <div>
+                <b>Technical:</b> Proficient in C, Java, DBMS, JavaScript, HTML/CSS.
+                <div>
+                <b>Personal:</b> Demonstrates attention to detail, empathy, and collaboration in work environments.
+              </div>
+              </div>
+                <b>Interests:</b>
+                <div>
+                Enthusiastic about exploring new avenues in web development while nurturing a keen interest in reading, indulging in artistic pursuits, and actively engaging in social initiatives.</p2>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:dhanusheee25@gmail.com">deekshitadakshnamoorthy@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a onclick="location.href='https://www.linkedin.com/in/deekshita-dakshnamoorthy-87629526a'">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Activities</a></li>
+                    <li><a href="#projects">Profile Summary</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
